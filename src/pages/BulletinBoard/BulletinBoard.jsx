@@ -128,6 +128,8 @@ export default function BulletinBoard() {
                     link3={link3}
                     page4={page4}
                     link4={link4}
+                    page5={page5}
+                    link5={link5}
                 ></Header>
                 <div className="new-notice">
                     <div className="notice-container">
