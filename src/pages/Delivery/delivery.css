@@ -1,0 +1,33 @@
+.delivery-background{
+    display: flex;
+    flex-direction: column;
+}
+.delivery-search {
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   
+}
+
+.delivery-search button{
+     margin-left: 17%;
+}
+
+.delivery-box{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    overflow-y: auto;
+}
+.delivery-board{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.awaiting, .delivered{
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+
+}

@@ -1,0 +1,68 @@
+name: Deploy React App
+
+on:
+  workflow_dispatch:
+    inputs:
+      instance:
+        type: choice
+        description: "Which pc to build on"
+        options:
+          - "aws-ec2"
+          - "aws-ec2-lucas-front"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "18"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: CI=false npm run build
+
+      - name: Prepare build folder for deployment
+        run: tar -czf build.tar.gz -C build .
+
+      - name: Cache build artifact
+        uses: actions/cache@v2
+        with:
+          path: build.tar.gz
+          key: build-artifact-${{ github.sha }}
+
+  deploy:
+    runs-on: ${{ inputs.instance }}
+
+    needs: build
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Restore build artifact from cache
+        uses: actions/cache@v2
+        with:
+          path: build.tar.gz
+          key: build-artifact-${{ github.sha }}
+          restore-keys: |
+            build-artifact-
+
+      - name: Create deployment directory
+        run: mkdir -p /home/ubuntu/html
+
+      - name: Extract build folder
+        run: tar -xzf build.tar.gz -C /home/ubuntu/html
+
+      - name: Clean old files (if needed)
+        run: sudo rm -rf /var/www/html/*
+
+      - name: Copy build to nginx path
+        run: sudo cp -r /home/ubuntu/html/* /var/www/html/

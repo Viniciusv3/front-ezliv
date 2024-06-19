@@ -1,0 +1,78 @@
+.myreserve-background {
+    display: flex;
+    flex-direction: column;
+}
+
+.myreserve-search {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.myreserve-search p {
+    font-size: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: #012A4A;
+}
+
+.myreserve-search button {
+    margin-left: 17%;
+}
+
+.header.myreserve p {
+    font-size: 25px;
+}
+
+.myreserve-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    overflow-y: auto;
+}
+
+.myreserve-board {
+    width: 80%;
+    height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    overflow: auto;
+}
+
+.myreserve-board::-webkit-scrollbar {
+    width: 8px;
+}
+
+.myreserve-board::-webkit-scrollbar-thumb {
+    background-color: #ADABAB;
+    border-radius: 20px;
+}
+
+.reserve-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.reserve-modal .select-areas, .reserve-modal .date, .reserve-modal .date Input{
+    width: 100%;
+}
+
+.reserve-modal .select-areas select{
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #91A9B4;
+    height: 28px;
+    align-items: center;
+    margin-top: 6px;
+}
+
+.reserve-modal .hours {
+    display: flex;
+    gap: 10px;
+}

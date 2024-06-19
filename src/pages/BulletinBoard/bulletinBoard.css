@@ -1,0 +1,65 @@
+.new-notice{
+    display: flex;
+    justify-content: center;
+    margin-top: 43px;
+}
+
+.new-notice .notice-container{
+    width: 60%;
+}
+
+.board-background{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.board-content{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.board-content .notices{
+    overflow: auto;
+    height: 60vh;  
+}
+
+.notices::-webkit-scrollbar {
+    width: 8px;    
+  }
+  
+  .notices::-webkit-scrollbar-thumb {
+    background-color: #ADABAB;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    /* border: 3px solid #91A9B4;  creates padding around scroll thumb */
+  }
+
+
+  .modal-notice{
+    width: 100%;
+  }
+
+  .modal-notice .itens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .modal-notice .area-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 248px;
+    gap: 6px;
+  }
+
+  .area-box .title{
+    width: 100%;
+  }
+
+  .area-box textarea{
+    width: 248px;
+  }

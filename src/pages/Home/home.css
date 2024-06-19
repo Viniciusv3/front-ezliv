@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+
+:root {
+    font-family: 'Montserrat';
+
+}
+
+.container {
+    width: 80%;
+}
+
+.banner {
+    background-color: #546E81;
+    padding: 40px 0px 0px 0px;
+}
+
+.banner .container {
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+}
+
+.banner .container h1 {
+    width: 70%;
+    margin: 0;
+    font-family: var(--font);
+    color: #FFF;
+    text-align: center;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.banner .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.advantages {
+    padding: 0px 0px 50px 0px;
+    background: #e7e7e7;
+}
+
+.advantages .title {
+    font-family: var(--font);
+    color: black;
+    text-align: center;
+    font-size: 56px;
+    margin-bottom: 100px;
+}
+
+.title-vantagens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 110px;
+    background-color: #d9d9d9;
+    color: black;
+    text-align: center;
+    font-size: 56px;
+    margin-bottom: 40px;
+    border-top-right-radius: 70px;
+}
+
+.vantagem {
+    color: #546E81;
+    font-weight: 600;
+}
+
+.advantages .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 3%;
+}
+
+.container-phone {
+    height: 600px;
+    width: 100%;
+    background-color: #e7e7e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-phone-body {
+    height: 600px;
+    width: 100%;
+    background-color: white;
+    border-top-left-radius: 150px;
+}
+
+.container-phone-body-top {
+    background-color: #e7e7e7;
+    height: 140px;
+    width: 100%;
+    border-bottom-right-radius: 150px;
+}
+
+.container-phone-body-bottom {
+    background-color: #546E81;
+    height: 140px;
+    width: 100%;
+    border-top-left-radius: 190px;
+}
+
+.background-container-phone-body-top {
+    background-color: white;
+}
+
+.background-container-phone-body-bottom {
+    background-color: white;
+}
+
+.background-about .container {
+    display: flex;
+}
+
+.container4 {
+    display: flex;
+    height: 636px;
+    width: 100%;
+}
+
+.box-1-c4 {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.box-2-c4 img {
+    margin-top: 3%;
+}
+
+.box-2-c4 {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.tittle-c4 {
+    font-family: "Anton";
+    font-size: 34px;
+    color: black;
+    flex-direction: column;
+}
+
+.text-c4 {
+    margin-top: 2%;
+    padding-left: 3%;
+    font-size: 20px;
+    font-weight: lighter;
+    color: #546E81;
+    flex-direction: column;
+}
+
+.icons-c4 {
+    margin-top: 10px;
+    display: flex;
+    height: 9%;
+    width: 60%;
+}
+
+.box-icon {
+    display: flex;
+    background-color: #5a595987;
+    height: 90%;
+    width: 47%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4%;
+    border-radius: 5px;
+}
+
+.icon1-c4 {
+    height: 100%;
+    width: 30%;
+}
+
+.text-icon-c4 {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-icon-c4-1 {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 10px;
+    font-weight: lighter;
+    padding-right: 50%;
+}
+
+.box-img-mobile-ref {
+    margin-bottom: 28%;
+    margin-left: 14%;
+}
+
+.background-final {
+    background: #546E81;
+}
+
+.background-final .container .datas {
+    padding-top: 100px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+
+}
+
+.background-final .interested {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.interested .title {
+    color: #ffff;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    width: 409px;
+    height: 87px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+
+}
+
+.background-final .contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #546E81;
+}
+
+.footer-infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 85%;
+    width: 100%;
+}
+
+.footer-business {
+    display: flex;
+    height: 5%;
+    width: 50%;
+    color: #ffff;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.sub-footer-2 {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}

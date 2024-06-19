@@ -1,0 +1,58 @@
+.background-login-payments{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.box-login-payments{
+    margin-top: 5%;
+    border-radius: 10px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #012A4A;
+    padding: 30px 10px;
+}
+
+.content-login-payments{
+    width: 50%;
+    color: white;
+    /* padding: 10px; */
+}
+
+.title-login-payments{
+    margin-bottom: 30px;
+    color: white;
+    font-size: 22px;
+}
+
+.action-login-payments{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.backgoround-show-payments{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-show-payments{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.content-login-payments .msg-error{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    text-align: center;
+}

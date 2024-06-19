@@ -1,0 +1,39 @@
+.all{
+    /* width: 100%; */
+    /* height: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Poppins;
+
+}
+
+.box{
+    /* width: 1078px; */
+    /* height: auto; */
+    display: flex;
+    /* justify-content: center; */
+}
+.box .image img{
+    width: 130%;
+    height: 130%;    
+}
+
+.box .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.box .text .title{
+    font-size: 48px;
+    margin-bottom: 50px;
+}
+
+.box .text .content{
+    font-size: 32px;
+    width: 70%;
+}

@@ -1,0 +1,54 @@
+name: Deploy React App
+
+on:
+  workflow_dispatch:
+    inputs:
+      instance:
+        type: choice
+        description: 'Which pc to build on'
+        options:
+            - 'aws-ec2'
+            - 'aws-ec2-lucas-front'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: CI=false npm run build
+
+      - name: Archive build folder
+        uses: actions/upload-artifact@v2
+        with:
+          name: build-artifact
+          path: build/
+
+  deploy:
+    runs-on: ${{inputs.instance}}
+
+    needs: build
+
+    steps:
+      - name: Clean old files (if needed)
+        run: sudo rm -rf /var/www/html/*
+        
+      - name: Download build artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: build-artifact
+          path: /home/ubuntu/html
+
+      - name: Copy archives to nginx path
+        run: sudo scp -r /home/ubuntu/html/* /var/www/html/

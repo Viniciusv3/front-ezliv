@@ -1,0 +1,37 @@
+.inputBox input {
+  border-radius: 5px;
+  border: 1px solid #91A9B4;
+  display: flex;
+  height: 28px;
+  padding: 10px;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  margin-top: 6px;
+  width: 100%;
+}
+
+#input-form {
+  color: white;
+  border-radius: 5px;
+  border: 1px solid #91A9B4;
+  display: flex;
+  height: 28px;
+  padding: 10px;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  margin-top: 6px;
+  background-color: #21404E;
+
+}
+
+#input-form-img {
+  display: block;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 100px;
+
+}

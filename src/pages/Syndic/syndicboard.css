@@ -1,0 +1,41 @@
+
+.headerSindico{
+    width: 100%;
+    padding: 0px;
+
+
+}
+.register {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin-left: 200px;
+    margin-top: 20px;
+}
+ .syndicboard-background {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 0px;
+} 
+
+.towers{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+    
+}
+
+.selectModal{
+    margin-top: 6px;
+    width: 100%;
+}
+
+.selectModal select{
+    width: 100%;
+    border-radius: 5px;
+}
+

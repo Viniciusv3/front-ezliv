@@ -1,0 +1,35 @@
+.input-search {
+    border-radius: 5px;
+    border: 1px solid #012A4A;
+    display: flex;
+    padding: 5px 10px;
+    align-items: center;
+    background: #E7E7E7;
+    color: #012A4A;
+    
+}
+
+.input-search .search-icon{
+    cursor: pointer;
+    padding: 5px 10px;
+    
+}
+
+.input-search input{
+    border: none;
+    display: flex;
+    align-items: center;
+    background: #E7E7E7;
+    width: 100%;
+    color: #012A4A;
+
+    font-size: 16px;
+}
+
+::-ms-input-placeholder { /* Edge 12-18 */
+    color: #012A4A;
+  }
+  
+  ::placeholder {
+    color:#012A4A;
+  }

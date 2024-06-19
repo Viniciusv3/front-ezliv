@@ -1,0 +1,13 @@
+.background-data{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 150px;
+    gap: 20px;
+}
+
+.background-data .text{
+    text-align: center;
+    
+}

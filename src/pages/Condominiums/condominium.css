@@ -1,0 +1,34 @@
+body{
+    background-color: #ebebeb;
+}
+.top {
+    display: flex;
+    flex-direction: column;
+}
+
+.top .title{
+    display: flex;
+    justify-content: center;
+}
+.top .button{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 100px 0px 0px;
+}
+.btnPrimary{
+    padding: 10px 30px;
+}
+h1{
+    text-align: center;
+    margin-top: 72px;
+    color: #3a3a3a;
+    font-weight: 500;
+}
+
+.condominiumsArea{
+    display: flex;
+    width: 100;
+    flex-wrap: wrap;
+    margin: 48px 32px;
+}
+

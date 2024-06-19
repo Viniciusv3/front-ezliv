@@ -1,0 +1,45 @@
+.card{
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    box-shadow: 1px 1px 10px rgb(117, 117, 117);
+    border: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.card img{
+    width: 35%;
+    border-radius: 4px;
+    height: 100%;
+    align-self: center;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+.condominiumName{
+    margin-top: 16px;
+    width: 100%;
+    display: flex;  
+    margin-left: 16px;
+    flex-direction: column;
+    text-align: center;
+    margin: 16px;
+}
+
+.card h4{
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-bottom: 16px;
+    margin-right: 16px;
+}
+
+.card span{
+    margin-bottom: 8px;
+}
+
+

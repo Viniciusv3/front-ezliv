@@ -1,0 +1,34 @@
+.background-received{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.background-received .boxes{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.boxes .waiting{
+    width: 30%;    
+}
+
+.boxes .removed{
+    width: 70%;
+}
+
+.removed .itens-removed{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.waiting .itens-waiting{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

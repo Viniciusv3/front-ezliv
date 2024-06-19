@@ -1,0 +1,30 @@
+header{
+    background-color: #546E81;
+}
+
+header .container{
+    width: 80%;
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-between;
+}
+
+header .image{
+    width: 30%;
+    cursor: pointer;
+}
+
+header .go-login{
+    display: flex;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 500px) {
+    header img{
+        margin-top: 24px;
+        margin-left: 32px;
+        margin-bottom: 24px;
+        width: 100px;
+    }    
+}

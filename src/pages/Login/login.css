@@ -1,0 +1,92 @@
+.backgorund {
+    background: #E7E7E7;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.backgorund .container {
+    display: flex;
+    justify-content: center;
+    height: 90%;
+}
+
+.container .banner {
+    background: #FFF;
+    width: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px 0px 0px 25px;
+}
+
+.banner .title {
+    color: #546E81;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 94px;
+    margin-bottom: 35px;
+    width: 289px;
+    text-align: center;
+
+}
+
+.container .login {
+    background: #012A4A;
+    width: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 25px 25px 0px;
+}
+
+.login .boxLogin {
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    width: 312px;
+    height: 350px;
+}
+
+.boxLogin .logo {
+    padding: 32px 0px 45px 0px;
+    cursor: pointer;
+}
+
+.boxLogin .form input {
+    margin-bottom: 29px;
+}
+
+.boxLogin .action {
+    margin-top: 17px;
+}
+
+.footerLogin {
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 95px;
+    margin-bottom: 0px;
+}
+
+.footerLogin p {
+    padding-bottom: 10px;
+}
+
+.loading{
+    color: #012A4A;
+}
+
+.errorText{
+    display: none;
+}

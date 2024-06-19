@@ -1,0 +1,113 @@
+.registercond-background {
+    display: flex;
+    flex-direction: column;
+}
+
+.registercont-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3%;
+
+}
+
+.register-form {
+    display: flex;
+    background-color: #456979;
+    width: 45%;
+    border-radius: 5px;
+    height: 65vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-form {
+    margin: 15px;
+}
+
+.inputs-form {
+    display: flex;
+    width: 100%;
+    margin-bottom: 40px;
+    color: white;
+    font-size: 15px;
+
+}
+
+.inputs-left {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+}
+
+.inputs-left select {
+    width: 196.8px;
+    background-color: #21404E;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid #91A9B4;
+    height: 28px;
+    margin: 6px 0px 10px 0px;
+}
+
+.inputs-left .title-select{
+    width: 196.8px;
+}
+
+.inputs-right {
+
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid green; */
+}
+
+.inputs-form p {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+input[type='file'] {
+    display: none;
+}
+
+.inputFile label {
+    margin-top: 1.2vh;
+    padding: 10px;
+    width: 196.8px;
+    height: 28px;
+    background: #828282;
+    border-radius: 5px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.inputFile label:hover{
+    background: #21404E;
+    border: 1px solid #fff;
+}
+
+#input-form {
+    margin-bottom: 10px;
+}
+
+.button-form{
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

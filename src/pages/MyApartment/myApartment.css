@@ -1,0 +1,64 @@
+.newUsers {
+    display: flex;
+    justify-content: center;
+}
+
+.newUsers .actions {
+    width: 90%;
+    margin: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.background-apartament {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.background-apartament .boxes {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.boxes .resident {
+    width: 30%;
+}
+
+.boxes .visitors {
+    width: 70%;
+}
+
+.visitors .cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.modal-visitors, .modal-resident{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.modal-visitors .gender{
+    width: 100%;
+}
+
+.gender #select-gender {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #91A9B4;
+    height: 28px;
+    align-items: center;
+    margin-top: 6px;
+}
+
+.modal-visitors .release{
+    display: flex;
+    flex-direction: column;
+}

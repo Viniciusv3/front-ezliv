@@ -1,0 +1,25 @@
+.overview-background{
+    display: flex;
+    flex-direction: column;
+}
+
+.overview-search button{
+     margin-left: 17%;
+}
+.header-overview p{
+    font-size: 25px;
+}
+
+.overview-condominium{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    overflow-y: auto;
+}
+.board-condominium{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+}

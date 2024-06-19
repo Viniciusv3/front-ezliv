@@ -1,0 +1,26 @@
+
+.headerSindico{
+    width: 100%;
+    padding: 0px;
+
+
+}
+ .employee-background {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 0px;
+} 
+
+.employee-board{
+    padding-left: 20px;
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+}
